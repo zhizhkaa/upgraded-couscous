@@ -1,17 +1,36 @@
 package LR1;
 
 public class BinarySearch {
+    // Напишите алгоритм бинарного поиска по массиву из 1_000_000 целых чисел двумя способами: 
+    // с использованием рекурсии и без использования рекурсии. Сравните их по времени выполнения.
+
     public static void main(String[] args) {
 
+        // Создание и заполнение массива значенями [1, 1 000 000]
         int[] arr = new int[1_000_000];
         for (int i = 0; i < arr.length; i++)
             arr[i] = i + 1;
 
-        int searchValue = 53_342;
+        // Значение для поиска
+        int searchValue = 53_342;   
 
-        System.out.println(binarySearch(arr, searchValue));
+        // Замер времени алгоритма без рекурсии
+        long startTime = System.nanoTime();
+        binarySearch(arr, searchValue);
+        long endTime = System.nanoTime();
+        long duration = (endTime - startTime);
 
-        System.out.println(recursiveBinarySearch(arr, searchValue, 0, arr.length - 1));
+        // Замер времени алгоритма с рекурсией
+        startTime = System.nanoTime();
+        recursiveBinarySearch(arr, searchValue, 0, arr.length - 1);
+        endTime = System.nanoTime();
+        long durationRecursive = (endTime - startTime);
+
+        // Результат
+        System.out.println("Без рекурсии [наносекунды]: " + duration);          // ~2500 нс
+        System.out.println("С рекурсией [наносекунды]: " + durationRecursive);  // ~1500 нс
+
+        // Вывод: в моем случае рекурсивный алгоритм примерно в 2 раза быстрее обычного
     }
 
     public static int binarySearch(int[] array, int searchValue) {
