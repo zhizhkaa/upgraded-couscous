@@ -10,5 +10,6 @@
   2. Напишите алгоритм разбиения строки на слова, не используя метод split().
 
 </details>
+
 - [Бинарный поиск](https://github.com/zhizhkaa/upgraded-couscous/blob/main/src/LR1/BinarySearch.java)
 - [Разделение строк](https://github.com/zhizhkaa/upgraded-couscous/blob/main/src/LR1/BinarySearch.java)
