@@ -24,6 +24,8 @@
 
 </details>
 
-- [Бинарный поиск](https://github.com/zhizhkaa/upgraded-couscous/blob/main/src/LR1/BinarySearch.java)
-- [Разделение строк](https://github.com/zhizhkaa/upgraded-couscous/blob/main/src/LR1/StringSplit.java)
+- [BestPlayer.java](https://github.com/zhizhkaa/upgraded-couscous/blob/main/src/LR2/BestPlayer.java)
+- [FootballClub.java.java](https://github.com/zhizhkaa/upgraded-couscous/blob/main/src/LR2/FootballClub.java.java)
+- [FootballClubDemo.java.java](https://github.com/zhizhkaa/upgraded-couscous/blob/main/src/LR2/FootballClubDemo.java.java)
+- [FootballClubRecord.java.java](https://github.com/zhizhkaa/upgraded-couscous/blob/main/src/LR2/FootballClubRecord.java.java)
 
