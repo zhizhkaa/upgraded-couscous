@@ -39,6 +39,7 @@ public class BinarySearch {
 
         while (left <= right) {
             int middle = left + (right - left) / 2;
+            //System.out.println(middle);
 
             if (array[middle] == searchValue)     { return middle; } 
             else if (array[middle] < searchValue) { left = middle + 1; } 
@@ -53,7 +54,7 @@ public class BinarySearch {
 
         int middle = left + (right - left) / 2;
 
-        if (array[middle] == searchValue) { 
+        if (array[middle] == searchValue) {
             return middle; 
         } else if (array[middle] < searchValue) { 
             return recursiveBinarySearch(array, searchValue, middle - 1, right); 
