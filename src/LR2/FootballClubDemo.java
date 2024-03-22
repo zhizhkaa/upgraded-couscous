@@ -12,43 +12,45 @@ public class FootballClubDemo {
             new FootballClub("Мадрид", 89, new BestPlayer("Игрок Спортивный"))};
 
         Arrays.sort(footballClubs);
-
+        
+        System.out.println("\nСортировка с помощью Comparable:\n");
         for (FootballClub footballClub : footballClubs) {
             System.out.println(footballClub);
         }
 
         // Компараторы
-        System.out.println("---\n");
+        System.out.println("\n---\n");
 
-        Comparator<FootballClub> byName = new Comparator<FootballClub>() {
+        Comparator<FootballClubRecord> byName = new Comparator<FootballClubRecord>() {
             @Override
-            public int compare(FootballClub o1, FootballClub o2) {
-                return o1.getName().compareTo(o2.getName());
+            public int compare(FootballClubRecord o1, FootballClubRecord o2) {
+                return o1.name().compareTo(o2.name());
             }
         };
 
-        Comparator<FootballClub> byNumberOfGames = new Comparator<FootballClub>() {
+        Comparator<FootballClubRecord> byNumberOfGames = new Comparator<FootballClubRecord>() {
             @Override
-            public int compare(FootballClub o1, FootballClub o2) {
-                return o1.getNumberOfGames() - o2.getNumberOfGames();
+            public int compare(FootballClubRecord o1, FootballClubRecord o2) {
+                return o1.numberOfGames() - o2.numberOfGames();
             }
         };
 
-        Comparator<FootballClub> byBestPlayer = new Comparator<FootballClub>() {
+        Comparator<FootballClubRecord> byBestPlayer = new Comparator<FootballClubRecord>() {
             @Override
-            public int compare(FootballClub o1, FootballClub o2) {
-                return o1.getBestPlayer().compareTo(o2.getBestPlayer());
+            public int compare(FootballClubRecord o1, FootballClubRecord o2) {
+                return o1.bestPlayer().compareTo(o2.bestPlayer());
             }
         };
 
-        FootballClub[] footballClubs2 = {
-            new FootballClub("Спартак", 100, new BestPlayer("Джон Джон")), 
-            new FootballClub("ЦСКА", 135, new BestPlayer("Иван Иванович")), 
-            new FootballClub("Мадрид", 89, new BestPlayer("Игрок Спортивный"))};
+        FootballClubRecord[] fotballClubRecords = {
+            new FootballClubRecord("Спартак", 100, "Джон", "Малкович"), 
+            new FootballClubRecord("ЦСКА", 135, "Антон", "Антонович"), 
+            new FootballClubRecord("Мадрид", 89, "Спортсмен", "Футбольный")};
 
-        Arrays.sort(footballClubs2, byBestPlayer.thenComparing(byNumberOfGames).thenComparing(byName));
-
-        for (FootballClub footballClub : footballClubs2) {
+        Arrays.sort(fotballClubRecords, byBestPlayer.thenComparing(byNumberOfGames).thenComparing(byName));
+        
+        System.out.println("Сортировка с помощью Comparator:\n");
+        for (FootballClubRecord footballClub : fotballClubRecords) {
             System.out.println(footballClub);
         }
     }
