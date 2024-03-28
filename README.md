@@ -29,10 +29,9 @@
 - [FootballClubDemo.java.java](https://github.com/zhizhkaa/upgraded-couscous/blob/main/src/LR2/FootballClubDemo.java.java)
 - [FootballClubRecord.java.java](https://github.com/zhizhkaa/upgraded-couscous/blob/main/src/LR2/FootballClubRecord.java.java)
 
-  <details>
-    
+<details>   
 <summary>Лабораторная работа 3</summary>
-  <details>
+
   ### Вариант №7
   #### Часть 1
   Дана папка с файлами и вложенными папками Directory_for_lab3, содержащая презентации, задания на лаб. работы и вопросы к лекциям по курсу Java.
