@@ -51,5 +51,5 @@
 </details>
 
 - [FileMover.java (Часть 1)](https://github.com/zhizhkaa/upgraded-couscous/blob/main/src/LR3/FileMover.java)
-- [Часть 2 (Архив будет скачиваться)](https://github.com/zhizhkaa/upgraded-couscous/raw/main/lr3.zip)
+- [lr3.zip (Часть 2)](https://github.com/zhizhkaa/upgraded-couscous/raw/main/lr3.zip)
 
