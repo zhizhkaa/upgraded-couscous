@@ -30,7 +30,8 @@
 - [FootballClubRecord.java.java](https://github.com/zhizhkaa/upgraded-couscous/blob/main/src/LR2/FootballClubRecord.java.java)
 
   <details>
-  <summary>Лабораторная работа 3</summary>
+    
+<summary>Лабораторная работа 3</summary>
   
   ### Вариант №7
   #### Часть 1
