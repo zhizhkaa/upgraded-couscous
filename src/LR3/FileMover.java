@@ -23,7 +23,7 @@ public class FileMover {
             Files.createDirectories(questionsPath);
             Files.createDirectories(assignmentsPath);
         } catch (IOException e) {
-            System.err.println("Error creating directories: " + e.getMessage());
+            System.err.println("Ошибка при создании папок: " + e.getMessage());
         }
 
         FileVisitor visitor = new FileVisitor(lecturesPath, questionsPath, assignmentsPath);
@@ -31,9 +31,11 @@ public class FileMover {
         try {
             Files.walkFileTree(sourcePath, visitor);
         } catch (IOException e) {
-            System.err.println("Error walking file tree: " + e.getMessage());
+            System.err.println("Ошибка с проходом по файлам: " + e.getMessage());
         }
     }
+    
+    ///
 
     private static class FileVisitor extends SimpleFileVisitor<Path> {
         private Path lecturesPath;

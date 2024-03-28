@@ -5,7 +5,7 @@ public record FootballClubRecord(String name, int numberOfGames, BestPlayer best
         return name.compareTo(other.name);
     }
 
-     @Override
+    @Override
     public String toString() {
          return String.format("%s; %d игр; Лучший игрок: %s", name, numberOfGames, bestPlayer);
     }
